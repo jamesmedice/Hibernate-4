@@ -1,0 +1,15 @@
+com\series\hibernate\State.class
+com\series\hibernate\Director.class
+com\series\hibernate\Street.class
+com\series\hibernate\ChuchTypes.class
+com\series\hibernate\Telephone.class
+com\series\hibernate\Devout.class
+com\series\hibernate\City.class
+com\series\hibernate\HighSchool.class
+com\series\hibernate\StudentContact.class
+com\series\hibernate\Church.class
+com\series\hibernate\Main.class
+com\series\hibernate\Student.class
+com\series\hibernate\HibernateUtil.class
+com\series\hibernate\Professor.class
+com\series\hibernate\StudentAddress.class

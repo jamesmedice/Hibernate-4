@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory name="transactionManager">
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/L7_stand</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">tpm1234</property>
+ 
+        <property name="connection.pool_size">1</property>
+ 
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <property name="show_sql">true</property>
+   		<property name="hbm2ddl.auto">create</property>
+  
+		<mapping class="com.series.hibernate.Church"/>
+		<mapping class="com.series.hibernate.Devout"/>
+		<mapping class="com.series.hibernate.Street"/>
+		<mapping class="com.series.hibernate.State"/>
+		<mapping class="com.series.hibernate.City"/>
+		<mapping class="com.series.hibernate.HighSchool"/>
+		<mapping class="com.series.hibernate.Director"/>
+		<mapping class="com.series.hibernate.Professor"/>
+		<mapping class="com.series.hibernate.Student"/>
+		<mapping class="com.series.hibernate.StudentAddress"/>
+		<mapping class="com.series.hibernate.StudentContact"/>
+		<mapping class="com.series.hibernate.Telephone"/>
+
+    </session-factory>
+</hibernate-configuration>
